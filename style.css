@@ -1,0 +1,105 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.header{
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(new.jpg);
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  overflow-x: hidden;
+  position: relative;
+}
+
+nav{
+  display: flex;
+  padding: 20px 100px;
+  align-items: center;
+
+}
+
+nav img{
+  width: 60px;
+}
+
+nav ul{
+  text-align: right;
+  display: inline;
+  list-style: none;
+  flex: 1;
+}
+
+nav ul li{
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+nav ul li::after{
+  content: '';
+  height: 3px;
+  width: 100%;
+  background: aliceblue;
+  left: 0%;
+  bottom: 0;
+}
+
+.main-text{
+  margin: 15% auto;
+  text-align: center;
+}
+
+.main-text h1{
+font-size: 50px;
+}
+
+.main-text .button{
+  text-decoration: none;
+  display: block;
+  height: 35px;
+  width: 140px;
+  margin: 25px auto;
+  line-height: 35px;
+  border: solid #fff;
+}
+
+.button{
+  position: relative;
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  font-weight: bold;
+  border: 20x solid #3eff37;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  overflow: hidden;
+
+}
+
+.buttom-img{
+  height: 150px;
+  position: absolute;
+  bottom: 0;
+  opacity: 0.2;
+  animation: animate 8s linear infinite;
+}
+
+@keyframes animate{
+  0%{
+    left: 0;
+  }
+  100%{
+    left: -1900px;
+  }
+}
